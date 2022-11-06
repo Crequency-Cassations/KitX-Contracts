@@ -1,4 +1,5 @@
 ﻿using KitX.Web.Rules;
+using System.Collections.Generic;
 
 namespace KitX.Contract.CSharp
 {
@@ -24,7 +25,7 @@ namespace KitX.Contract.CSharp
         /// 获取插件功能列表
         /// </summary>
         /// <returns>功能体</returns>
-        Function GetFunctions();
+        List<Function> GetFunctions();
 
         /// <summary>
         /// 执行命令
