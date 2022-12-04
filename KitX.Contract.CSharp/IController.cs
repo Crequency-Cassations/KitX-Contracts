@@ -34,5 +34,17 @@ namespace KitX.Contract.CSharp
         /// <param name="arg">参数列表</param>
         /// <returns>结果代码</returns>
         object Execute(string cmd, object arg = null);
+
+        /// <summary>
+        /// 设置根路径
+        /// </summary>
+        /// <param name="path"></param>
+        void SetRootPath(string path);
+
+        /// <summary>
+        /// 这是工作路径
+        /// </summary>
+        /// <param name="path"></param>
+        void SetWorkPath(string path);
     }
 }
