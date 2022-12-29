@@ -1,5 +1,9 @@
 ﻿package org.crequency.kitx.contracts.java;
 
+import org.crequency.kitx.ruls.web.Function;
+
+import java.util.ArrayList;
+
 public interface IController {
     void Start();
 
@@ -7,7 +11,7 @@ public interface IController {
 
     void End();
 
-//    List<Function> GetFunctions();
+    ArrayList<Function> GetFunctions();
 
     Object Execute(String cmd);
 
