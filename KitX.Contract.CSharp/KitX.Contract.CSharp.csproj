@@ -3,8 +3,6 @@
     <PropertyGroup>
         <TargetFrameworks>netstandard2.1;net46</TargetFrameworks>
         <Nullable>disable</Nullable>
-        <BaseOutputPath>..\..\KitX Build\Contracts\CSharp\</BaseOutputPath>
-        <BaseIntermediateOutputPath>..\..\KitX Build\Temp\Contracts\CSharp\</BaseIntermediateOutputPath>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>Dynesshely</Authors>
         <Company>Crequency</Company>
