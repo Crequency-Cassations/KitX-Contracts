@@ -4,6 +4,8 @@
 #include <string>
 #include <hash_map>
 
+#include "datetime.h"
+
 namespace KitX::Contract::Cpp{
     typedef std::unordered_map<std::string, std::string> Dictionary;
     typedef std::string string;
@@ -15,7 +17,6 @@ namespace KitX::Contract::Cpp{
     struct IController;
     struct IMarketPluginContract;
 
-    class DateTime;
     class Function;
 }
 

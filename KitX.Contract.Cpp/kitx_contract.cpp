@@ -1,5 +1,7 @@
 #include "kitx_contract.h"
 
+using namespace CppEnhanced::Classes;
+
 namespace KitX::Contract::Cpp {
     struct IIdentifyInterface {
         string Name;
@@ -33,10 +35,6 @@ namespace KitX::Contract::Cpp {
     };
 
     struct IMarketPluginContract {
-
-    };
-
-    class DateTime {
 
     };
 
