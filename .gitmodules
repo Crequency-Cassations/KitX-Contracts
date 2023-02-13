@@ -1,0 +1,3 @@
+[submodule "KitX.Contract.Cpp/lib/CppEnhanced"]
+	path = KitX.Contract.Cpp/lib/CppEnhanced
+	url = git@github.com:Dynesshely/CppEnhanced.git
