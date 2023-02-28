@@ -30,16 +30,20 @@ namespace KitX.Contract.CSharp
         /// <summary>
         /// 执行命令
         /// </summary>
-        /// <param name="cmd">命令名称</param>
-        /// <param name="arg">参数列表</param>
-        /// <returns>结果代码</returns>
-        object Execute(string cmd, object arg = null);
+        /// <param name="cmd">命令实例</param>
+        void Execute(Command cmd);
 
         /// <summary>
         /// 设置根路径
         /// </summary>
         /// <param name="path"></param>
         void SetRootPath(string path);
+
+        /// <summary>
+        /// 设置插件的命令发送缓冲区
+        /// </summary>
+        /// <param name="commands">命令队列</param>
+        void SetCommandsSendBuffer(ref Queue<Command> commands);
 
         /// <summary>
         /// 这是工作路径
