@@ -1,18 +1,25 @@
-#ifndef KITX_CONTRACT_CPP_KITX_CONTRACT_H
-#define KITX_CONTRACT_CPP_KITX_CONTRACT_H
+
+#ifndef KITX_CONTRACT_CPP_KITX_CONTRACT_HPP
+#define KITX_CONTRACT_CPP_KITX_CONTRACT_HPP
 
 #include <string>
 #include <hash_map>
 
 #include <datetime.hpp>
 
-namespace KitX::Contract::Cpp{
+namespace KitX::Contract::Cpp {
+
     typedef CppEnhanced::DateTime DateTime;
+
     typedef std::unordered_map<std::string, std::string> Dictionary;
+
     typedef std::string string;
+
     typedef void (*fp);
-    typedef void* (*fps)(std::string cmd);
-    typedef void* (*fpso)(std::string cmd, void* arg);
+
+    typedef void *(*fps)(std::string cmd);
+
+    typedef void *(*fpso)(std::string cmd, void *arg);
 
     struct IIdentifyInterface;
     struct IController;
@@ -21,4 +28,4 @@ namespace KitX::Contract::Cpp{
     class Function;
 }
 
-#endif //KITX_CONTRACT_CPP_KITX_CONTRACT_H
+#endif //KITX_CONTRACT_CPP_KITX_CONTRACT_HPP

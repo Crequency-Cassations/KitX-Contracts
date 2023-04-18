@@ -1,8 +1,7 @@
-#include "kitx_contract.h"
-
-using namespace CppEnhanced::Classes;
+#include "kitx_contract.hpp"
 
 namespace KitX::Contract::Cpp {
+
     struct IIdentifyInterface {
         string Name;
         string Version;
