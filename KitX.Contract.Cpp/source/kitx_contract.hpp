@@ -4,9 +4,10 @@
 #include <string>
 #include <hash_map>
 
-#include "datetime.h"
+#include <datetime.hpp>
 
 namespace KitX::Contract::Cpp{
+    typedef CppEnhanced::DateTime DateTime;
     typedef std::unordered_map<std::string, std::string> Dictionary;
     typedef std::string string;
     typedef void (*fp);
