@@ -1,4 +1,5 @@
 ﻿using KitX.Web.Rules;
+using System;
 using System.Collections.Generic;
 
 namespace KitX.Contract.CSharp
@@ -40,10 +41,10 @@ namespace KitX.Contract.CSharp
         void SetRootPath(string path);
 
         /// <summary>
-        /// 设置插件的命令发送缓冲区
+        /// 设置插件的命令发送回调函数
         /// </summary>
-        /// <param name="commands">命令队列</param>
-        void SetCommandsSendBuffer(ref Queue<Command> commands);
+        /// <param name="action">回调函数</param>
+        void SetSendCommandAction(Action<Command> action);
 
         /// <summary>
         /// 这是工作路径
