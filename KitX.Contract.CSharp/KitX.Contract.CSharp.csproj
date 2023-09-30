@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.1;net46</TargetFrameworks>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>disable</Nullable>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>Dynesshely</Authors>
@@ -37,7 +37,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\KitX Rules\KitX.Web.Rules\KitX.Web.Rules.csproj" />
+        <ProjectReference Include="..\..\KitX Rules\KitX.Web.Rules\KitX.Web.Rules.csproj" />
     </ItemGroup>
 
 </Project>
