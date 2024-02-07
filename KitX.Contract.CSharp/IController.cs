@@ -1,55 +1,25 @@
-﻿using KitX.Web.Rules;
+﻿using KitX.Shared.Plugin;
+using KitX.Shared.WebCommand;
 using System;
 using System.Collections.Generic;
 
-namespace KitX.Contract.CSharp
+namespace KitX.Contract.CSharp;
+
+public interface IController
 {
-    public interface IController
-    {
+    void Start();
 
-        /// <summary>
-        /// 进入启动模式
-        /// </summary>
-        void Start();
+    void Pause();
 
-        /// <summary>
-        /// 进入暂停模式
-        /// </summary>
-        void Pause();
+    void End();
 
-        /// <summary>
-        /// 进入停止模式
-        /// </summary>
-        void End();
+    List<Function> GetFunctions();
 
-        /// <summary>
-        /// 获取插件功能列表
-        /// </summary>
-        /// <returns>功能体</returns>
-        List<Function> GetFunctions();
+    void Execute(Command cmd);
 
-        /// <summary>
-        /// 执行命令
-        /// </summary>
-        /// <param name="cmd">命令实例</param>
-        void Execute(Command cmd);
+    void SetRootPath(string path);
 
-        /// <summary>
-        /// 设置根路径
-        /// </summary>
-        /// <param name="path"></param>
-        void SetRootPath(string path);
+    void SetSendCommandAction(Action<Command> action);
 
-        /// <summary>
-        /// 设置插件的命令发送回调函数
-        /// </summary>
-        /// <param name="action">回调函数</param>
-        void SetSendCommandAction(Action<Command> action);
-
-        /// <summary>
-        /// 这是工作路径
-        /// </summary>
-        /// <param name="path"></param>
-        void SetWorkPath(string path);
-    }
+    void SetWorkPath(string path);
 }
