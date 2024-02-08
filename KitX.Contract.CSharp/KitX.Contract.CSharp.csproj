@@ -18,7 +18,7 @@
         <Authors>Dynesshely</Authors>
         <Company>Crequency</Company>
         <Description>Contract of KitX Plugins written in C#</Description>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
         <PackageIcon>KitX-Background-ani.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
