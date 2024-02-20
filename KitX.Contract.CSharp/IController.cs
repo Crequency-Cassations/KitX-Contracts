@@ -1,7 +1,6 @@
-﻿using KitX.Shared.Plugin;
-using KitX.Shared.WebCommand;
+﻿using KitX.Shared.WebCommand;
+using KitX.Shared.WebCommand.Details;
 using System;
-using System.Collections.Generic;
 
 namespace KitX.Contract.CSharp;
 
@@ -13,13 +12,9 @@ public interface IController
 
     void End();
 
-    List<Function> GetFunctions();
-
     void Execute(Command cmd);
 
-    void SetRootPath(string path);
+    void SetSendCommandAction(Action<Request> action);
 
-    void SetSendCommandAction(Action<Command> action);
-
-    void SetWorkPath(string path);
+    void SetWorkingDetail(PluginWorkingDetail workingDetail);
 }
