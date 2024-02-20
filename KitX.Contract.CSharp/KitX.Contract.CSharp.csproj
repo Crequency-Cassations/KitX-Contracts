@@ -23,7 +23,7 @@
         <PackageIcon>KitX-Background-ani.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageProjectUrl>https://github.com/Crequency/KitX/</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Crequency/KitX/</RepositoryUrl>
+        <RepositoryUrl>https://github.com/Crequency/KitX-Standard/</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -46,4 +46,3 @@
     </ItemGroup>
 
 </Project>
-
